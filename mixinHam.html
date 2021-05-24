@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('nhập a:'));
+    let b = parseInt(prompt('nhập b:'));
+    let c = parseInt(prompt('nhập c:'));
+    function so_sanh(a, b, c) {
+        if ((a>b && a>c)||(b>a && b>c)||(c>a && c>b)){
+            if((b>c)||(a>c)||(a>b)){
+                return c||c||b;
+            }else {
+                return b||a||a;
+            }
+        }
+
+    }document.write(so_sanh(a, b, c));
+
+</script>
+</body>
+</html>
+

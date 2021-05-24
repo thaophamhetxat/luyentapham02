@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+    // let p = parseInt(prompt('nhập p'));
+    //
+    // function tong_binh_phuong(p) {
+    //     let sum = p*p;
+    //     return sum;
+    // }
+    //
+    // document.write(tong_binh_phuong(p));
+
+    //Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được
+    // let r = parseInt(prompt('nhập bán kính hình tròn r ='));
+    // function dienTich() {
+    //     let s = r*r*3.14;
+    //     return s;
+    // }
+    // function chuVi() {
+    //     let c = r*2*3.14;
+    //     return c;
+    //
+    // }
+    // document.write(dienTich(r) + '<br>');
+    // document.write(chuVi(r));
+
+    //Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+    // let p = parseInt(prompt('nhập n'));
+    // let giaithua = 1;
+    //
+    // for (let i = 1; i <= p; i++) {
+    //     giaithua = giaithua * i;
+    // }
+    // document.write(giaithua);
+
+    //Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về false.
+    // let p = prompt('nhập 1 chuỗi bất kì');
+    // function kiem_tra() {
+    //     if (p==parseInt(p) ){
+    //         return 1;
+    //     } else {
+    //         return -1
+    //     }
+    // }
+    // kiem_tra();
+    // if (kiem_tra()==-1){
+    //     alert('đây k phải ký tự chuỗi');
+    // }else {
+    //     alert('đây là chuỗi');
+    // }
+
+
+    //Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+    // let a = [1,2,4];
+    // let min = a[0];
+    //     for (let i=1;i<3;i++){
+    //         if (min > a[i]){
+    //             min = a[i];
+    //         }
+    //     }
+    // document.write(min);
+
+    //Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. Nếu là nguyên dương trả về true, ngược lại trả về false.
+    // let p = parseInt(prompt('nhập số nguyên'));
+    // let check = true;
+    // function so_nguyen_duong(p) {
+    //     if (p>0){
+    //         check = true;
+    //     }else {
+    //         check = false;
+    //     }return check;
+    // }
+    // document.write(so_nguyen_duong(p));
+
+    // Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+    let p = [];
+    sl = prompt('nhập độ dài mảng');
+    for (let i=0;i<sl;i++){
+        p[i] = parseInt(prompt('nhập giá trị mảng ') + i)
+    }
+    let first =0;
+    let last = p.length-1;
+    function dao_nguoc(p) {
+        while (first<last){
+            let c = p[first];
+            p[first]=p[last];
+            p[last]=c;
+            first++;
+            last--
+        }return p;
+    }document.write(dao_nguoc(p))
+
+
+
+
+
+
+</script>
+</body>
+</html>

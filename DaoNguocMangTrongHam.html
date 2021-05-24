@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let p = [];
+    sl = parseInt(prompt('nhập số lượng mảng'));
+
+    for (let i = 0; i < sl; i++) {
+        p[i] = prompt('nhập giá trị mảng ' );
+    }
+    let first = 0;
+    let last = p.length - 1;
+
+    function dao_nguoc(p) {
+        while (first < last) {
+            let x = p[first];
+            p[first] = p[last];
+            p[last] = x;
+            first++;
+            last--;
+        }
+        return p
+    }
+    dao_nguoc(p);
+    document.write(p);
+</script>
+</body>
+</html>

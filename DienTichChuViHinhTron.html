@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let r = parseInt(prompt('Nhập bán kính'));
+    function chu_vi(r) {
+        let chuvi = r*2*3.14;
+        return chuvi;
+    }
+    function dien_tich(r) {
+        let dientich = r*r*3.14;
+        return dientich;
+    }
+    document.write('chu vi hình tròn có bán kính bằng '+r+' là ' + chu_vi(r) + '<br>');
+    document.write('diện tích hình tròn có bán kính bằng '+r+' là ' + dien_tich(r));
+
+</script>
+</body>
+</html>
